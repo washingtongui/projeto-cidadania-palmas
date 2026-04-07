@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encontrar Solução - Guia Jurídico de Palmas</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1><i class="fas fa-gavel"></i> Guia Jurídico de Palmas</h1>
+      <p>Seu portal de acesso à justiça e cidadania</p>
+      <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="informacoes.html">Informações Jurídicas</a></li>
+        <li><a href="solucoes.html" class="active">Encontrar Solução</a></li>
+        <li><a href="mapas.html">Mapas e Localizações</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="solucoes">
+    <div class="container">
+      <h2>Encontrar Solução</h2>
+      <p>Selecione o tipo de problema para encontrar o órgão responsável:</p>
+      <div class="botoes-grid">
+        <button class="botao-solucao" data-orgao="defensoria"><i class="fas fa-user-tie"></i> Não tenho dinheiro para
+          advogado</button>
+        <button class="botao-solucao" data-orgao="procon"><i class="fas fa-shopping-bag"></i> Problemas com
+          compra</button>
+        <button class="botao-solucao" data-orgao="inss"><i class="fas fa-retirement"></i> Aposentadoria</button>
+        <button class="botao-solucao" data-orgao="receita"><i class="fas fa-id-card"></i> Problemas com
+          CPF/CNPJ</button>
+        <button class="botao-solucao" data-orgao="receita"><i class="fas fa-car"></i> Imposto (IPVA)</button>
+        <button class="botao-solucao" data-orgao="ministerio"><i class="fas fa-passport"></i> Passaporte ou crimes
+          federais</button>
+        <button class="botao-solucao" data-orgao="ministerio"><i class="fas fa-exclamation-triangle"></i>
+          Segurança/emergência</button>
+        <button class="botao-solucao" data-orgao="juizado"><i class="fas fa-ticket-alt"></i> Multas/CNH</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Guia Jurídico de Palmas. Todos os direitos reservados.</p>
+      <p>Informações oficiais dos órgãos públicos de Palmas-TO.</p>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal">
+    <div class="modal-conteudo">
+      <span class="fechar">&times;</span>
+      <div class="modal-header">
+        <h3 id="modal-titulo"></h3>
+      </div>
+      <div class="modal-body">
+        <p id="modal-descricao"></p>
+        <p><strong>Endereço:</strong> <span id="modal-endereco"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

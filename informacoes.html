@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informações Jurídicas - Guia Jurídico de Palmas</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1><i class="fas fa-gavel"></i> Guia Jurídico de Palmas</h1>
+      <p>Seu portal de acesso à justiça e cidadania</p>
+      <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="informacoes.html" class="active">Informações Jurídicas</a></li>
+        <li><a href="solucoes.html">Encontrar Solução</a></li>
+        <li><a href="mapas.html">Mapas e Localizações</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="informacoes">
+    <div class="container">
+      <h2>Seção de Informações Jurídicas</h2>
+      <div class="orgaos-grid">
+        <div class="orgao-card">
+          <i class="fas fa-balance-scale"></i>
+          <h3>Defensoria Pública</h3>
+          <p>Assistência jurídica gratuita para cidadãos de baixa renda, assegurando o direito à defesa em processos
+            judiciais.</p>
+        </div>
+        <div class="orgao-card">
+          <i class="fas fa-shopping-cart"></i>
+          <h3>Procon</h3>
+          <p>Proteção e defesa dos direitos do consumidor contra práticas abusivas em compras, serviços e cobranças.</p>
+        </div>
+        <div class="orgao-card">
+          <i class="fas fa-clock"></i>
+          <h3>Juizado Especial</h3>
+          <p>Resolução ágil de causas cíveis de menor complexidade, com procedimentos simplificados e sem custas
+            judiciais.</p>
+        </div>
+        <div class="orgao-card">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Ministério Público</h3>
+          <p>Instituição responsável pela defesa da ordem jurídica, do regime democrático e dos interesses sociais
+            indisponíveis.</p>
+        </div>
+        <div class="orgao-card">
+          <i class="fas fa-hand-holding-heart"></i>
+          <h3>INSS</h3>
+          <p>Administração de benefícios previdenciários, incluindo aposentadorias, pensões e auxílios diversos.</p>
+        </div>
+        <div class="orgao-card">
+          <i class="fas fa-calculator"></i>
+          <h3>Receita Federal</h3>
+          <p>Gestão tributária, fiscalização de impostos, emissão e regularização de CPF e CNPJ.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Guia Jurídico de Palmas. Todos os direitos reservados.</p>
+      <p>Informações oficiais dos órgãos públicos de Palmas-TO.</p>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal">
+    <div class="modal-conteudo">
+      <span class="fechar">&times;</span>
+      <div class="modal-header">
+        <h3 id="modal-titulo"></h3>
+      </div>
+      <div class="modal-body">
+        <p id="modal-descricao"></p>
+        <p><strong>Endereço:</strong> <span id="modal-endereco"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
